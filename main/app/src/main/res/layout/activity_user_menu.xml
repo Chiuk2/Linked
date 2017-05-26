@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_other"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/light_gray"
+    tools:context="linked.main.UserMenu">
+
+    <ImageView
+        android:id="@+id/findImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/activities_logo"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <ImageView
+        android:id="@+id/viewImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/profile_logo"
+        android:layout_alignTop="@+id/findImageView"
+        android:layout_alignLeft="@+id/logoutImageView"
+        android:layout_alignStart="@+id/logoutImageView" />
+
+    <ImageView
+        android:id="@+id/chatImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/chat_logo"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/findTextView"
+        android:layout_alignLeft="@+id/findTextView"
+        android:layout_alignStart="@+id/findTextView" />
+
+    <ImageView
+        android:id="@+id/logoutImageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/logout_logo"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignTop="@+id/chatImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/findTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/find_activities"
+        android:layout_marginTop="13dp"
+        android:textAlignment="center"
+        android:textColor="@color/prim_blue"
+        android:textSize="18sp"
+        android:layout_below="@+id/findImageView"
+        android:layout_alignLeft="@+id/findImageView"
+        android:layout_alignStart="@+id/findImageView"
+        android:layout_alignRight="@+id/findImageView"
+        android:layout_alignEnd="@+id/findImageView" />
+
+    <TextView
+        android:id="@+id/viewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:textColor="@color/prim_blue"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/findTextView"
+        android:layout_alignBottom="@+id/findTextView"
+        android:layout_alignRight="@+id/viewImageView"
+        android:layout_alignEnd="@+id/viewImageView"
+        android:layout_alignLeft="@+id/viewImageView"
+        android:layout_alignStart="@+id/viewImageView" />
+
+    <TextView
+        android:id="@+id/chatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/chat"
+        android:textColor="@color/prim_blue"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/chatImageView"
+        android:layout_alignLeft="@+id/chatImageView"
+        android:layout_alignStart="@+id/chatImageView"
+        android:layout_alignRight="@+id/chatImageView"
+        android:layout_alignEnd="@+id/chatImageView" />
+
+    <TextView
+        android:id="@+id/settingsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chatTextView"
+        android:text="@string/signout"
+        android:textColor="@color/prim_blue"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/chatTextView"
+        android:layout_alignLeft="@+id/logoutImageView"
+        android:layout_alignStart="@+id/logoutImageView"
+        android:layout_alignRight="@+id/logoutImageView"
+        android:layout_alignEnd="@+id/logoutImageView" />
+</RelativeLayout>

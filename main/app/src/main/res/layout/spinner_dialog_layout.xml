@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="30dp"
+    android:layout_width="260dp"
+    android:ellipsize="marquee"
+    android:textSize="20sp"
+    android:background="@android:color/white"
+    android:paddingLeft="20dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="20dp"
+    android:paddingTop="0dp"/>

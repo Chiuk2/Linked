@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@android:id/text1"
+    android:layout_height="30dp"
+    android:layout_width="260dp"
+    android:ellipsize="marquee"
+    android:textSize="18sp"
+    android:textAlignment="center"
+    android:background="@drawable/gradient_spinner"
+    android:layout_margin="10dp"
+    android:popupBackground="#DFFFFFFF"
+    android:textColor="@android:color/white">
+</TextView>

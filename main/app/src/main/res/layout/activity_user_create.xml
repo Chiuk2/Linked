@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="linked.main.UserCreate">
+
+    <TextView
+        android:text="@string/user_create"
+        android:id="@+id/businessTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/businessTitle"
+        android:layout_centerHorizontal="true"
+        android:scaleX="2"
+        android:scaleY="2" />
+
+    <Button
+        android:text="@string/upload_pic"
+        android:id="@+id/uploadPicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/emailText2"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:textSize="16sp"
+        android:layout_width="260dp"
+        android:layout_below="@+id/nameText2"
+        android:layout_alignLeft="@+id/nameText2"
+        android:layout_alignStart="@+id/nameText2" />
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_width="125dp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/emailText2"
+        android:layout_alignLeft="@+id/emailText2"
+        android:layout_alignStart="@+id/emailText2" />
+
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_alignTop="@+id/monthSpinner"
+        android:layout_alignRight="@+id/emailText2"
+        android:layout_alignEnd="@+id/emailText2"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/passText2"
+        android:layout_alignLeft="@+id/monthSpinner"
+        android:layout_alignStart="@+id/monthSpinner"
+        android:layout_marginBottom="11dp" />
+
+    <EditText
+        android:id="@+id/passText2"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/password"
+        android:background="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:layout_above="@+id/cPassText2"
+        android:layout_alignLeft="@+id/genderSpinner"
+        android:layout_alignStart="@+id/genderSpinner"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/cPassText2"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password_confirm"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:background="@android:color/white"
+        android:textSize="16sp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignLeft="@+id/passText2"
+        android:layout_alignStart="@+id/passText2"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:text="@string/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:ems="10"
+        android:background="@android:color/white"
+        android:layout_marginTop="17dp"
+        android:textSize="16sp"
+        android:layout_width="260dp"
+        android:layout_below="@+id/uploadPicButton"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/nameText2"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/full"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:background="@android:color/white"
+        android:textSize="16sp"
+        android:layout_width="260dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/userText"
+        android:layout_alignLeft="@+id/userText"
+        android:layout_alignStart="@+id/userText" />
+
+</RelativeLayout>

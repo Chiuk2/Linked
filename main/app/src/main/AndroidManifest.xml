@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="linked.main">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDu0d_-l439WKo6uMvah8xQE_9lEOZD6vg" />
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cooldog_icon_new"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateAccount"
+            android:label="Create Account" />
+        <activity android:name=".UserCreate" />
+        <activity android:name=".BusinessCreate" />
+        <activity
+            android:name=".UserMenu"
+            android:label="Menu" />
+        <activity
+            android:name=".BusinessMenu"
+            android:label="Menu" />
+        <activity android:name=".BusinessActivities" />
+        <activity android:name=".CardFragment" />
+        <activity android:name=".LocationActivity" />
+        <activity
+            android:name=".ActivityListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PersonListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PersonDetailActivity"
+            android:label="@string/title_person_detail"
+            android:parentActivityName=".PersonListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="linked.main.PersonListActivity" />
+        </activity>
+        <activity
+            android:name=".MessagingActivity"
+            android:label="@string/title_activity_messaging"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,125 @@
+<resources>
+    <string name="account_type">Choose an account type.</string>
+    <string name="app_name">Linked</string>
+    <string name="auth_failed">Incorrect email or password.</string>
+    <string name="business_menu_title">My Business</string>
+    <string name="business">Business</string>
+    <string name="business_create">Business Account Creation</string>
+    <string name="business_address">Business Address</string>
+    <string name="business_name">Business Name</string>
+    <string name="chat">Chat</string>
+    <string name="create_user_failed">Email already in use.</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="edit_business_info">Edit Info</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="email">Email Address</string>
+    <string name="empty_field">Missing required information.</string>
+    <string name="find_activities">Find Activities</string>
+    <string name="full">Full Name</string>
+    <string name="invalid_address">Invalid address.</string>
+    <string name="offer_activity">What activities are you offering?</string>
+    <string name="password">Password (min 6 chars)</string>
+    <string name="password_confirm">Confirm Password</string>
+    <string name="pw_mismatch">Password mismatch.</string>
+    <string name="select_category">Select a Category</string>
+    <string name="select_activity">Select an Activity</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="signout">Sign Out</string>
+    <string name="skip">Skip This Step</string>
+    <string name="submit">Submit</string>
+    <string name="upload_pic">Upload Picture</string>
+    <string name="user">User</string>
+    <string name="user_create">User Account Creation</string>
+    <string name="username">Username</string>
+    <string name="test_btn">Owner Menu</string>
+    <string name="view_business_info">View Info</string>
+    <string name="view_delete_act">View/Edit Activities</string>
+    <string name="send_to">Share</string>
+    <string name="checkin">Interested</string>
+
+    <string-array name="business_type_array">
+        <item name="business_title">Business Type</item>
+        <item name="gym">Gym</item>
+        <item name="park">Park</item>
+        <item name="bar">Bar</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item name="month_title">Month</item>
+        <item name="january">January</item>
+        <item name="february">February</item>
+        <item name="march">March</item>
+        <item name="april">April</item>
+        <item name="may">May</item>
+        <item name="june">June</item>
+        <item name="july">July</item>
+        <item name="august">August</item>
+        <item name="september">September</item>
+        <item name="october">October</item>
+        <item name="november">November</item>
+        <item name="december">December</item>
+    </string-array>
+
+    <string-array name="year_array">
+        <item name="year_title">Year</item>
+        <item name="1998">1998</item>
+        <item name="1997">1997</item>
+        <item name="1996">1996</item>
+        <item name="1995">1995</item>
+        <item name="1994">1994</item>
+        <item name="1993">1993</item>
+        <item name="1992">1992</item>
+        <item name="1991">1991</item>
+        <item name="1990">1990</item>
+        <item name="1989">1989</item>
+        <item name="1988">1988</item>
+        <item name="1987">1987</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item name="gender_title">Gender</item>
+        <item name="female">Female</item>
+        <item name="male">Male</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item name="category_title">Choose a Category</item>
+        <item name="art">Art</item>
+        <item name="food">Food</item>
+        <item name="indoors">Indoors</item>
+        <item name="sports">Sports</item>
+    </string-array>
+
+    <string-array name="art_array">
+        <item name="activity_title">Choose an activity</item>
+        <item name="film">Film</item>
+        <item name="music">Music</item>
+        <item name="painting">Painting</item>
+    </string-array>
+
+    <string-array name="food_array">
+        <item name="activity_title">Choose an activity</item>
+        <item name="bar">Bars</item>
+        <item name="dinner">Dinner</item>
+        <item name="contest">Eating Contests</item>
+    </string-array>
+
+    <string-array name="indoors_array">
+        <item name="activity_title">Choose an activity</item>
+        <item name="board_games">Board Games</item>
+        <item name="video_games">Video Games</item>
+        <item name="yoga">Yoga</item>
+    </string-array>
+
+    <string-array name="sports_array">
+        <item name="activity_title">Choose an activity</item>
+        <item name="basketball">Basketball</item>
+        <item name="biking">Biking</item>
+        <item name="dancing">Dancing</item>
+    </string-array>
+    <string name="title_business_list">Businesses</string>
+    <string name="title_business_detail">Business Detail</string>
+    <string name="title_person_detail">Person Detail</string>
+    <string name="title_activity_messaging">MessagingActivity</string>
+</resources>

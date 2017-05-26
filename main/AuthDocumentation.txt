@@ -1,0 +1,55 @@
+Source: https://firebase.google.com/docs/reference/android/com/google/firebase/auth/FirebaseAuth
+
+Usage: mAuth
+Documentation:
+- public static FirebaseAuth getInstance (FirebaseApp firebaseApp)
+- Returns an instance of this class corresponding to the given FirebaseApp instance.
+
+
+Usage: mAuthListener
+Documentation: 
+- public static interface FirebaseAuth.AuthStateListener
+- Uses addAuthStateListener(AuthStateListener) && removeAuthStateListener(AuthStateListener) 
+	- Register and unregister listeners
+- Listener called when there is a change in the authentication state
+	- Right after the listener has been registered
+	- When a user is signed in
+	- When the current user is signed out
+	- When the current user changes
+	- When there is a change in the current user's token
+
+
+Usage: onAuthStateChange(...)
+Documentation:
+- public abstract void onAuthStateChanged (FirebaseAuth auth)
+- Gets current user and logs
+
+
+Usage: user
+Documentation:
+- public FirebaseUser getCurrentUser ()
+- Returns the currently signed-in FirebaseUser or null if there is none.
+	- Use getCurrentUser() != null to check if a user is signed in.
+
+
+Usage: createUserWithEmailAndPassword(...)
+Documentation:
+- public Task<AuthResult> createUserWithEmailAndPassword (String email, String password)
+- Tries to create a new user account with the given email address and password. If successful, it also signs the user in into the app.
+	-Access the signed-in user with getCurrentUser().
+- Upon successful completion, this operation triggers an onAuthStateChanged(FirebaseAuth) event in all registered FirebaseAuth.AuthStateListeners.
+
+
+Usage: signInWithEmailAndPassword(...)
+Documentation:
+- public Task<AuthResult> signInWithEmailAndPassword (String email, String password)
+- Tries to sign in a user with the given email address and password.
+	-Access the signed-in user with getCurrentUser().
+- Upon successful completion, this operation triggers an onAuthStateChanged(FirebaseAuth) event in all registered FirebaseAuth.AuthStateListeners.
+
+
+Usage: signOut()
+Documentation:
+- public void signOut ()
+- Signs out the current user and clears it from the disk cache.
+- Upon successful completion, this operation triggers an onAuthStateChanged(FirebaseAuth) event in all registered FirebaseAuth.AuthStateListeners.
